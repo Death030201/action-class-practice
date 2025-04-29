@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Action Class Full Practice Website</h1>
+      <h1>Selenium Action Class Practice</h1>
 
       <section className="section">
         <h2>Simple Click</h2>
