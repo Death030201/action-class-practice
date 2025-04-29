@@ -1,0 +1,142 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #d6e4f0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.container {
+  background: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.action-box {
+  padding: 30px;
+  border: 2px dashed #ccc;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.action-box.blue {
+  background-color: #e0f7fa;
+}
+
+.action-box.green {
+  background-color: #d0f8ce;
+}
+
+.action-box.red {
+  background-color: #ffcdd2;
+}
+
+.drag-drop-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drag-source, .drop-target {
+  width: 45%;
+  height: 100px;
+  background-color: #f5f5f5;
+  border: 2px solid #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.drag-source {
+  background-color: #e1bee7;
+}
+
+.drop-target {
+  background-color: #c8e6c9;
+}
+
+.input-text {
+  padding: 8px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  opacity: 0;                  /* Fully invisible */
+  pointer-events: auto;         /* Still clickable */
+  width: 150px;
+  height: 50px;
+  background: none;             /* No background */
+  border: none;                 /* No border */
+  outline: none;                /* No outline on focus or hover */
+  box-shadow: none;             /* No shadow */
+  cursor: default;              /* No hand cursor */
+  margin: 10px;
+}
+
+.hidden:hover {
+  opacity: 0;                   /* Stay invisible */
+  background: none;             /* No background */
+  border: none;                 /* No border */
+  outline: none;                /* No outline */
+  box-shadow: none;             /* No shadow */
+  cursor: default;              /* Default arrow cursor */
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
